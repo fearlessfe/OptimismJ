@@ -106,22 +106,34 @@ const config = {
         items: [
           {
             type: "doc",
-            docId: "users/index",
+            docId: "hildr/index",
             position: "left",
-            label: "Users",
+            label: "Hildr",
           },
           {
             type: "doc",
-            docId: "developers/quickstart/index",
+            docId: "op-besu/index",
             position: "left",
-            label: "Developers",
+            label: "Op-Besu",
           },
-          {
-            type: "doc",
-            docId: "architecture/index",
-            position: "left",
-            label: "Architecture",
-          },
+          // {
+          //   type: "doc",
+          //   docId: "users/index",
+          //   position: "left",
+          //   label: "Users",
+          // },
+          // {
+          //   type: "doc",
+          //   docId: "developers/quickstart/index",
+          //   position: "left",
+          //   label: "Developers",
+          // },
+          // {
+          //   type: "doc",
+          //   docId: "architecture/index",
+          //   position: "left",
+          //   label: "Architecture",
+          // },
           // { can add this section back if we want it
           //   type: "dropdown",
           //   label: "Tutorials",
@@ -137,16 +149,16 @@ const config = {
           //     },
           //   ],
           // },
-          {
-            to: "/developers/guides/run-a-node",
-            position: "left",
-            label: "Run a node",
-          },
-          {
-            to: "/developers/linea-version",
-            position: "right",
-            label: "Release notes",
-          },
+          // {
+          //   to: "/developers/guides/run-a-node",
+          //   position: "left",
+          //   label: "Run a node",
+          // },
+          // {
+          //   to: "/developers/linea-version",
+          //   position: "right",
+          //   label: "Release notes",
+          // },
           {
             href: "https://discord.gg/linea",
             className: "header-discord-link",
