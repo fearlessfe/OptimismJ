@@ -12,20 +12,20 @@ const katex = require("rehype-katex");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Linea",
-  tagline:
-    "An EVM-equivalent network, scaling the Ethereum experience. Secured with a zero-knowledge rollup to Ethereum, built on lattice-based cryptography, and powered by Consensys.",
+  title: "Optimism Java",
+  // tagline:
+  //"An EVM-equivalent network, scaling the Ethereum experience. Secured with a zero-knowledge rollup to Ethereum, built on lattice-based cryptography, and powered by Consensys.",
   url: "https://docs.linea.build",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "throw",
-  favicon: "img/favicon.ico",
+  favicon: "img/logo.png",
   trailingSlash: false,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "Consensys", // Usually your GitHub org/user name.
-  projectName: "doc.linea", // Usually your repo name.
+  organizationName: "Optimism Java", // Usually your GitHub org/user name.
+  projectName: "optimism-java.github.io", // Usually your repo name.
   deploymentBranch: "gh-pages", // Github Pages deploying branch
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -43,7 +43,8 @@ const config = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           // Set a base path separate from default /docs
-          editUrl: "https://github.com/Consensys/doc.linea/tree/main/",
+          editUrl:
+            "https://github.com/optimism-java/optimism-java.github.io/tree/main/",
           path: "docs",
           routeBasePath: "/",
           // @ts-ignore
@@ -73,14 +74,14 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      announcementBar: {
-        id: "announcement_bar",
-        content:
-          '📣 <strong>Linea ENS</strong> is now available! Visit the <a href="https://names.linea.build/" target="blank">app</a>, <a href="https://support.linea.build/general/ens" target="blank">user guide</a>, or our <a href="https://docs.linea.build/developers/tooling/cross-chain/ccip-read-gateway" target="blank">developer guidance</a> on reusing its architecture.',
-        backgroundColor: "#61dfff",
-        textColor: "#121212",
-        isCloseable: false,
-      },
+      // announcementBar: {
+      //   id: "announcement_bar",
+      //   content:
+      //     '📣 <strong>Linea ENS</strong> is now available! Visit the <a href="https://names.linea.build/" target="blank">app</a>, <a href="https://support.linea.build/general/ens" target="blank">user guide</a>, or our <a href="https://docs.linea.build/developers/tooling/cross-chain/ccip-read-gateway" target="blank">developer guidance</a> on reusing its architecture.',
+      //   backgroundColor: "#61dfff",
+      //   textColor: "#121212",
+      //   isCloseable: false,
+      // },
       colorMode: {
         defaultMode: "dark",
         disableSwitch: false,
@@ -99,9 +100,9 @@ const config = {
       navbar: {
         title: "Docs",
         logo: {
-          alt: "Linea",
-          src: "img/Linea_logo_black.svg",
-          srcDark: "img/Linea_logo_white.svg",
+          alt: "Optimism",
+          src: "img/logo.png",
+          srcDark: "img/logo.png",
         },
         items: [
           {
@@ -160,13 +161,13 @@ const config = {
           //   label: "Release notes",
           // },
           {
-            href: "https://discord.gg/linea",
+            href: "https://discord.gg/qHK3Vj4j",
             className: "header-discord-link",
             position: "right",
           },
           {
-            href: "https://twitter.com/lineabuild",
-            className: "header-twitter-link",
+            href: "https://github.com/optimism-java",
+            className: "header-github-link",
             position: "right",
           },
         ],
@@ -177,22 +178,22 @@ const config = {
           {
             title: "Links",
             items: [
-              {
-                label: "Linea homepage",
-                href: "https://linea.build/",
-              },
-              {
-                label: "Network status",
-                href: "https://linea.statuspage.io/",
-              },
-              {
-                label: "Mainnet block explorer",
-                href: "https://lineascan.build",
-              },
-              {
-                label: "Linea Sepolia block explorer",
-                href: "https://sepolia.lineascan.build",
-              },
+              // {
+              //   label: "Linea homepage",
+              //   href: "https://linea.build/",
+              // },
+              // {
+              //   label: "Network status",
+              //   href: "https://linea.statuspage.io/",
+              // },
+              // {
+              //   label: "Dispute Game mainnet block explorer",
+              //   href: "https://lineascan.build",
+              // },
+              // {
+              //   label: "Dispute Game Sepolia block explorer",
+              //   href: "https://sepolia.lineascan.build",
+              // },
             ],
           },
           {
@@ -200,16 +201,16 @@ const config = {
             items: [
               {
                 label: "Join our Discord",
-                href: "https://discord.gg/linea",
+                href: "https://discord.gg/qHK3Vj4j",
               },
-              {
-                label: "Get support",
-                to: "https://support.linea.build/",
-              },
-              {
-                label: "Give feedback",
-                to: "https://community.linea.build/c/feedback",
-              },
+              // {
+              //   label: "Get support",
+              //   to: "https://support.linea.build/",
+              // },
+              // {
+              //   label: "Give feedback",
+              //   to: "https://community.linea.build/c/feedback",
+              // },
             ],
           },
           {
@@ -217,12 +218,12 @@ const config = {
             items: [
               {
                 label: "Contribute to our documentation",
-                href: "https://github.com/Consensys/doc.linea",
+                href: "https://github.com/optimism-java/optimism-java.github.io",
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Consensys, Inc.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Optimism Java.`,
       },
       prism: {
         theme: lightCodeTheme,
