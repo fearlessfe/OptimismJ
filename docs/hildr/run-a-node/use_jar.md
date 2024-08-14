@@ -1,7 +1,8 @@
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+
 # Use the Hildr jar
 
 ## Prerequisites
-
 
 [Java JDK 21+](https://www.oracle.com/java/technologies/downloads/)
 
@@ -11,7 +12,8 @@ Download the [Hildr jar](https://github.com/optimism-java/hildr/releases).
 
 ## Start a Hildr node
 
-=== "op sepolia"
+<Tabs>
+  <TabItem value="op sepolia" label="op sepolia" default>
 
     ```shell
     java --enable-preview \
@@ -28,7 +30,9 @@ Download the [Hildr jar](https://github.com/optimism-java/hildr/releases).
     --sync-mode full >l2-hildr-node.log 2>&1 &
     ```
 
-=== "devnet or other"
+</TabItem>
+
+<TabItem value="devnet or other" label="devnet or other">
 
     ```shell
     java --enable-preview \
@@ -45,3 +49,6 @@ Download the [Hildr jar](https://github.com/optimism-java/hildr/releases).
     --log-level INFO \ # can be either: "DEBUG","TRACE","WARN","ERROR"
     --sync-mode full >l2-hildr-node.log 2>&1 &
     ```
+
+</TabItem>
+</Tabs>

@@ -1,3 +1,5 @@
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+
 # Use docker
 
 You can use Docker to run [Hildr](https://github.com/optimism-java/hildr) as an Optimism CL node.
@@ -10,7 +12,8 @@ docker pull ghcr.io/optimism-java/hildr:latest
 
 ## Start a Hildr node
 
-=== "op sepolia"
+<Tabs>
+  <TabItem value="op sepolia" label="op sepolia" default>
     ```shell
     docker run -it -p 11545:11545 \
     -v <you jwt secret>:/jwt/jwt.hex \
@@ -26,8 +29,9 @@ docker pull ghcr.io/optimism-java/hildr:latest
     --log-level INFO \ # can be either: "DEBUG","TRACE","WARN","ERROR"
     --sync-mode full
     ```
+</TabItem>
 
-=== "devnet or other"
+<TabItem value="devnet or other" label="devnet or other">
     ```shell
     docker run -it -p 11545:11545 \
     -v <your jwt secret>:/jwt/jwt.hex \
@@ -45,3 +49,5 @@ docker pull ghcr.io/optimism-java/hildr:latest
     --log-level INFO \ # can be either: "DEBUG","TRACE","WARN","ERROR"
     --sync-mode full
     ```
+</TabItem>
+</Tabs>

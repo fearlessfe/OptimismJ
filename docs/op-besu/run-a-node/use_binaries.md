@@ -1,3 +1,5 @@
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+
 # Use the packaged binaries
 
 You can install the Op-besu or Op-geth client to run a Optimism EL node from a binary distribution.
@@ -14,7 +16,8 @@ Unpack the downloaded files and change into the `op-besu-<release>` directory.
 
 ## Run a Op-Besu node
 
-=== "op sepolia"
+<Tabs>
+  <TabItem value="op sepolia" label="op sepolia" default>
 
     ```shell
     cd op-besu-<release> && \
@@ -32,7 +35,9 @@ Unpack the downloaded files and change into the `op-besu-<release>` directory.
     --version-compatibility-protection=false
     ```
 
-=== "devnet or other"
+</TabItem>
+
+<TabItem value="devnet or other" label="devnet or other">
 
     ```shell
     cd op-besu-<release> && \
@@ -49,3 +54,7 @@ Unpack the downloaded files and change into the `op-besu-<release>` directory.
     --logging=INFO \
     --version-compatibility-protection=false
     ```
+
+    </TabItem>
+
+</Tabs>

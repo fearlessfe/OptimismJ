@@ -242,7 +242,7 @@ abbr:where([title]) {
 
 a {
   font-family: inherit;
-  color: #2eb9dc;
+  color: #ef5552;
   text-decoration: inherit;
 }
 
@@ -316,16 +316,16 @@ textarea {
   --ifm-color-primary-lightest: #fff;
   --ifm-color-primary-lighter: #fff;
   --ifm-color-primary-light: #bfe8ff;
-  --ifm-color-primary: #fff;
+  --ifm-color-primary: #e57171;
   --ifm-color-primary-dark: #dcf1fd;
   --ifm-color-primary-darker: #61dfff;
   --ifm-color-primary-darkest: #58cbe8;
-  --ifm-color-success: #61dfff;
+  --ifm-color-success: #e57171;
   --ifm-color-success-dark: #58cbe8;
   --ifm-color-info: #c0c0c0;
   --ifm-color-info-dark: #989898;
-  --ifm-link-color: #2eb9dc;
-  --ifm-menu-color-active: #2eb9dc;
+  --ifm-link-color: #e57171;
+  --ifm-menu-color-active: #e57171;
   --ifm-footer-background-color: #000;
   --ifm-background-color: #121212;
   --docusaurus-highlighted-code-line-bg: rgb(66 66 66 / 35%);
@@ -348,15 +348,15 @@ textarea {
   --ifm-color-primary-lightest: #eaf0ff;
   --ifm-color-primary-lighter: #a5e5ff;
   --ifm-color-primary-light: #61dfff;
-  --ifm-color-primary: #000;
+  --ifm-color-primary: #ef5552;
   --ifm-color-primary-dark: #313131;
   --ifm-color-primary-darker: #545454;
   --ifm-color-primary-darkest: #818181;
-  --ifm-color-success: #61dfff;
+  --ifm-color-success: #e57171;
   --ifm-color-success-dark: #58cbe8;
-  --ifm-link-color: #2eb9dc;
-  --ifm-link-hover-color: #2eb9dc;
-  --ifm-menu-color-active: #2eb9dc;
+  --ifm-link-color: #ef5552;
+  --ifm-link-hover-color: #ef5552;
+  --ifm-menu-color-active: #ef5552;
   --ifm-color-info: #c0c0c0;
   --ifm-color-info-dark: #989898;
   --ifm-footer-background-color: #000;
